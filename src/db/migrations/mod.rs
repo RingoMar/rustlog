@@ -71,7 +71,7 @@ String CODEC(ZSTD(10))
     )
     .await?;
 
-    run_migration(db, "6_structured_message", StructuredMigration { db_name }).await?;
+    // run_migration(db, "6_structured_message", StructuredMigration { db_name }).await?;
 
     run_migration(db, "7_username_history", UsernameHistoryMigration).await?;
 
